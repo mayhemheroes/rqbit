@@ -1,0 +1,8 @@
+project: rqbit
+target: roundtrip
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/roundtrip/testsuite
+cmds:
+  - cmd: /mayhem/roundtrip
+    libfuzzer: true
